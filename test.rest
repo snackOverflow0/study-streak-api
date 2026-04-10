@@ -1,0 +1,22 @@
+### CREATE USER
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Kimberly"
+}
+
+### GET USER BY ID
+GET http://localhost:3000/users/1
+
+###############################################
+
+### ADD LOG
+POST http://localhost:3000/logs
+Content-Type: application/json
+
+{
+  "user_id": 2,
+  "study_date": "2025-10-29",
+  "hours": 3
+}
